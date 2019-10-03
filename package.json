@@ -1,0 +1,22 @@
+{
+  "name": "imod-hello-wrold",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "imod build",
+    "dev": "imod dev",
+    "lint": "tslint --project tsconfig.json --format stylish --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^5.20.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.6.3"
+  }
+}
