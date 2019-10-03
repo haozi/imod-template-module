@@ -8,8 +8,8 @@
   "module": "dist/index.mjs",
   "types": "dist/types/index.d.ts",
   "scripts": {
-    "build": "imod build",
-    "dev": "imod dev",
+    "build": "npm run lint && imod build",
+    "dev": "npm run lint && imod dev",
     "lint": "tslint --project tsconfig.json --format stylish --fix",
     "prepublishOnly": "npm run build"
   },

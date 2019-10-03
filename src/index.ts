@@ -1,4 +1,4 @@
-import { print } from './utils'
+import { print } from './lib/utils'
 
 class HelloWorld {
   whoami: string
@@ -6,7 +6,7 @@ class HelloWorld {
     this.whoami = whoami
   }
   say () {
-    print(`Hello, I'm ${this.whoami}`)
+    print(`Hello, I'm ${this.whoami}`);
   }
 }
 
