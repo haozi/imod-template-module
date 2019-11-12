@@ -3,7 +3,6 @@
   "rules": {
     "no-floating-promises": false,
     "no-var-keyword": true,
-    "only-arrow-functions": true,
-    "semicolon": false
+    "only-arrow-functions": true
   }
 }

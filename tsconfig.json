@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": false,
+    "esModuleInterop": true,
     "allowUnreachableCode": true,
     "experimentalDecorators": true,
     "jsx": "react",
@@ -21,7 +22,8 @@
     ]
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/__tests__/*"
   ],
   "include": [
     "src/**/*.ts",

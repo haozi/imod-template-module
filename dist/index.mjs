@@ -1,13 +1,20 @@
 const print = (text) => {
     console.log(text);
 };
+const sleep = (s) => new Promise((resolve => {
+    setTimeout(resolve, s * 1000);
+}));
 
 class HelloWorld {
     constructor(whoami) {
         this.whoami = whoami;
     }
-    say() {
-        print(`Hello, I'm ${this.whoami}`);
+    async say() {
+        await sleep(1);
+        const msg = `Hello, I'm ${this.whoami}`;
+        print(msg);
+        return msg;
     }
 }
-new HelloWorld('demo').say();
+
+export default HelloWorld;

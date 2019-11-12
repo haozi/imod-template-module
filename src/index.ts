@@ -1,13 +1,14 @@
-import { print } from './lib/utils'
+import { sleep, print } from './lib/utils'
 
-class HelloWorld {
+export default class HelloWorld {
   whoami: string
   constructor (whoami: string) {
     this.whoami = whoami
   }
-  say () {
-    print(`Hello, I'm ${this.whoami}`);
+  async say () {
+    await sleep(1)
+    const msg = `Hello, I'm ${this.whoami}`
+    print(msg)
+    return msg
   }
 }
-
-new HelloWorld('demo').say()
