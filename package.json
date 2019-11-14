@@ -13,7 +13,7 @@
     "dev": "npm run lint && imod dev",
     "lint": "tslint --project tsconfig.json --format stylish --fix",
     "prepublishOnly": "npm run test && npm run build",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "husky": {
     "hooks": {
