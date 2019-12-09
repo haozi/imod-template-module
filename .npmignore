@@ -1,0 +1,10 @@
+src
+**/__tests__
+*.ts
+*.tsx
+*.log
+commitlint.config.js
+imod.config.js
+jest.config.js
+tsconfig.json
+tslint.json
