@@ -17,8 +17,9 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "post-merge": "yarn",
+      "pre-commit": "yarn run lint"
     }
   },
   "dependencies": {},
